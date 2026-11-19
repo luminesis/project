@@ -6,8 +6,11 @@ title = Dorm Chef
 # Имя пакета (латиницей, без пробелов)
 package.name = dormchef
 
-# Твой домен (можно оставить так)
+# Твой домен
 package.domain = org.dorm
+
+# Путь к исходному коду (точка означает текущую папку, где лежит main.py)
+source.dir = .
 
 # Какие файлы включать в проект
 source.include_exts = py,png,jpg,kv,atlas
@@ -18,7 +21,7 @@ source.main_file = main.py
 # Версия
 version = 0.1
 
-# Список зависимостей (обязательно укажи python3 и kivy)
+# Список зависимостей
 requirements = python3,kivy
 
 # Целевая платформа Android
