@@ -9,7 +9,7 @@ package.name = dormchef
 # Твой домен
 package.domain = org.dorm
 
-# Путь к исходному коду (точка означает текущую папку, где лежит main.py)
+# Путь к исходному коду
 source.dir = .
 
 # Какие файлы включать в проект
@@ -28,6 +28,12 @@ requirements = python3,kivy
 orientation = portrait
 fullscreen = 0
 android.permissions = INTERNET
+
+# Фиксируем стабильные версии SDK, чтобы избежать ошибок лицензий и сборки
+android.api = 31
+android.min_api = 21
+android.sdk = 31
+android.ndk = 25b
 
 [buildozer]
 log_level = 2
