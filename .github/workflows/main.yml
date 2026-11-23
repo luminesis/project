@@ -17,6 +17,17 @@ jobs:
       with:
         python-version: '3.10'
 
+    # Устанавливаем Java (нужна для Android SDK)
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    # Автоматически устанавливаем Android SDK и sdkmanager
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+
     - name: Install dependencies
       run: |
         sudo apt-get update
@@ -66,3 +77,4 @@ jobs:
       with:
         name: dorm-chef-apk
         path: bin/*.apk
+      
