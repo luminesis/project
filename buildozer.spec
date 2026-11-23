@@ -3,7 +3,7 @@
 # Название твоего приложения
 title = Dorm Chef
 
-# Имя пакета (латиницей, без пробелов)
+# Имя пакета
 package.name = dormchef
 
 # Твой домен
@@ -29,11 +29,11 @@ orientation = portrait
 fullscreen = 0
 android.permissions = INTERNET
 
-# Фиксируем стабильные версии SDK, чтобы избежать ошибок лицензий и сборки
+# Указываем Buildozer брать готовый SDK прямо с сервера GitHub (это отменяет скачивание и ошибку с aidl)
+android.sdk_path = /usr/local/lib/android/sdk
+android.ndk_path = /usr/local/lib/android/sdk/ndk/25b
 android.api = 31
 android.min_api = 21
-android.sdk = 31
-android.ndk = 25b
 
 [buildozer]
 log_level = 2
